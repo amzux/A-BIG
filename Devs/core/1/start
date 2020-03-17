@@ -1,0 +1,8 @@
+echo "starting Webpage"
+cd web
+python3 -m http.server 7878  &
+echo "started on port 127.0.0.1:7878"
+echo " starting ftp"
+cd ../ftp/
+python -m pyftpdlib --directory=FTP --port=2121
+echo "done"

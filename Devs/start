@@ -1,0 +1,39 @@
+#!/bin/bash
+echo "[] Dev-Console []"
+echo "		       "
+echo "1 Whats new?    "
+echo "2 To-do         "
+echo "3 Projects      "
+echo "4 IDEAs         "
+echo "5 Temp (all)    "
+echo " 5a temp-amzker  "
+echo " 5b temp-doff    "
+echo " 5c temp-conan   "
+echo "---------------- "
+echo " GIT-SHORTCUT    "
+echo "---------------- "
+echo "g1  Update repo  "
+echo "g2  push to repo "
+
+read -p ":>>> " ans
+
+if [ "$ans" == "1" ] ; then
+clear && cat core/new-work.txt
+./start
+fi
+
+if [ "$ans" == "2" ] ; then
+   clear
+   read -p "user(con,am,df): " usr
+      if [ "$usr" == "con" ] ; then
+      cat conn/todo.txt
+     ./start
+      fi
+fi
+
+if [ "$ans" == "g2" ] ; then
+   git add -A
+   git commit -a -m "auto-push $(whoami)"
+   git push
+fi
+

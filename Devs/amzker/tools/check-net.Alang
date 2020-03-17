@@ -1,0 +1,12 @@
+#!/bin/Amzlang
+impp os
+impp rnd
+
+net = os.system("chnet")
+
+if net == "1" :
+   oss("ping google.com")
+elif net == "0" :
+   rprn("fuck you")
+fi
+
