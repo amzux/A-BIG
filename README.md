@@ -5,8 +5,10 @@
 1)  Install `Amzy.deb` [Debian/Debian-Based]
 
 
-    ```git clone git@github.com:amzux/A-BIG.git && cd A-BIG
-       sudo dpkg -i Amzy.deb```
+    ```
+       git clone git@github.com:amzux/A-BIG.git && cd A-BIG
+       sudo dpkg -i Amzy.deb
+    ```
 
 
 2)  Run Amzy -di dev-tools 
